@@ -25,7 +25,6 @@ export default function HomePage() {
       </AnimatedSection>
 
       <AnimatedSection id="testimonials-wrapper" className="my-16 md:my-32 scroll-mt-20" delay={0.45}>
-        <h2 className="text-[20px] font-normal text-muted-text mb-8">What people say</h2>
         <Testimonials />
       </AnimatedSection>
 
