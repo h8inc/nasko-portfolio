@@ -26,7 +26,7 @@ export default function StickyNav() {
         setPrevScrollY(currentScrollY)
       }
 
-      const sections = ["selected-projects", "testimonials", "side-gigs"]
+      const sections = ["selected-projects", "testimonials-wrapper", "side-gigs"]
       const offset = 200
       let currentSection = ""
 
@@ -106,13 +106,13 @@ export default function StickyNav() {
                 Projects
               </Link>
               <Link
-                href="#testimonials"
+                href="#testimonials-wrapper"
                 className={`text-lg font-normal transition-colors ${
-                  activeSection === "testimonials" ? "text-accent-lime" : "text-muted-text"
+                  activeSection === "testimonials-wrapper" ? "text-accent-lime" : "text-muted-text"
                 }`}
                 onClick={(e) => {
                   e.preventDefault()
-                  handleNavClick("testimonials")
+                  handleNavClick("testimonials-wrapper")
                 }}
               >
                 Testimonials
@@ -182,7 +182,7 @@ export default function StickyNav() {
               {[
                 { id: "help-section", label: "About" },
                 { id: "selected-projects", label: "Projects" },
-                { id: "testimonials", label: "Testimonials" },
+                { id: "testimonials-wrapper", label: "Testimonials" },
                 { id: "side-gigs", label: "Side Gigs" },
               ].map((item) => (
                 <motion.div
