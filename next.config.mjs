@@ -7,6 +7,10 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export', // Enable static export for GitHub Pages
+  trailingSlash: true, // Required for GitHub Pages
+  basePath: '', // No base path needed
+  assetPrefix: '', // No asset prefix needed
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -14,6 +18,7 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
+    unoptimized: true, // Required for static export
     remotePatterns: [
       {
         protocol: 'https',
@@ -32,9 +37,7 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-  // If you want to disable CSS minification, you would set swcMinify to false.
-  // Be aware that this also disables JavaScript minification.
-   swcMinify: false,
+  swcMinify: false,
 }
 
 mergeConfig(nextConfig, userConfig)
