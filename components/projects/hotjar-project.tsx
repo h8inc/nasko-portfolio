@@ -1,5 +1,6 @@
 import Image from "next/image"
 import MainCTA from "../main-cta"
+import TertiaryCTA from "../tertiary-cta"
 
 export default function HotjarProject() {
   return (
@@ -35,13 +36,15 @@ export default function HotjarProject() {
           />
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-          <MainCTA href="https://app.pitch.com/app/player/bbdfda9b-8742-42ce-953e-6ff650d8bfa1/2da6d163-8aba-4185-9f68-9eb4006dc108">
+        <div className="flex flex-col items-center gap-4 mt-10">
+          <MainCTA href="https://app.pitch.com/app/player/bbdfda9b-8742-42ce-953e-6ff650d8bfa1/2da6d163-8aba-4185-9f68-9eb4006dc108" className="w-fit">
             Onboarding case study
           </MainCTA>
-          <MainCTA href="https://app.pitch.com/app/player/bbdfda9b-8742-42ce-953e-6ff650d8bfa1/82a0e37b-deca-4c52-b765-eec54e6e4bf7" className="bg-main-text/10 text-main-text hover:bg-main-text/20">
+          <TertiaryCTA href="https://app.pitch.com/app/player/bbdfda9b-8742-42ce-953e-6ff650d8bfa1/82a0e37b-deca-4c52-b765-eec54e6e4bf7" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
             Pricing case study
-          </MainCTA>
+          </TertiaryCTA>
         </div>
       </div>
 
