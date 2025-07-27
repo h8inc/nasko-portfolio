@@ -290,24 +290,4 @@ header {
     -webkit-text-stroke-color: rgba(0, 0, 0, 0.8); /* Almost opaque black stroke */
     paint-order: stroke fill;
   }
-
-  /* Floating paths CSS animations for static export */
-  .floating-path {
-    opacity: 0.06;
-    transition: opacity 0.3s ease-in-out;
-  }
-
-  .floating-path.animate-float {
-    opacity: 0.1;
-    animation: float-animation linear infinite;
-  }
-
-  @keyframes float-animation {
-    0% {
-      stroke-dashoffset: 0;
-    }
-    100% {
-      stroke-dashoffset: 1000;
-    }
-  }
 }

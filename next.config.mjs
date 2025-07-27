@@ -7,10 +7,7 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Enable static export for GitHub Pages
-  trailingSlash: true, // Required for GitHub Pages
-  basePath: '', // No base path needed
-  assetPrefix: '', // No asset prefix needed
+  // Removed output: 'export' for proper Next.js deployment
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -18,7 +15,6 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true, // Required for static export
     remotePatterns: [
       {
         protocol: 'https',
