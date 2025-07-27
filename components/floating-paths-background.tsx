@@ -1,6 +1,5 @@
 "use client"
 
-import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
 
 interface FloatingPathsProps {
@@ -42,10 +41,6 @@ function FloatingPaths({ position, isAnimated, isMobile }: FloatingPathsProps) {
     baseStrokeOpacity: baseOpacity + i * opacityIncrement,
   }))
 
-  // Use consistent opacity values for smooth transitions
-  const staticOpacityValue = 0.06
-  const animatedOpacityValue = 0.1
-
   return (
     <div className="absolute inset-0 pointer-events-none">
       <svg 
@@ -56,39 +51,16 @@ function FloatingPaths({ position, isAnimated, isMobile }: FloatingPathsProps) {
       >
         <title>Background Paths</title>
         {paths.map((path) => (
-          <motion.path
+          <path
             key={path.id}
             d={path.d}
             stroke="currentColor"
             strokeWidth={path.width}
             strokeOpacity={path.baseStrokeOpacity}
-            variants={{
-              static: {
-                pathLength: 1,
-                opacity: staticOpacityValue / path.baseStrokeOpacity,
-                pathOffset: 0,
-              },
-              animated: {
-                pathLength: 1,
-                opacity: animatedOpacityValue / path.baseStrokeOpacity,
-                pathOffset: [0, 1, 0],
-              },
-            }}
-            initial="static"
-            animate={isAnimated ? "animated" : "static"}
-            transition={{
-              opacity: { 
-                duration: 0.3,
-                ease: "easeInOut" 
-              },
-              pathOffset: isAnimated ? {
-                duration: isMobile ? 15 + Math.random() * 8 : 20 + Math.random() * 10,
-                repeat: Number.POSITIVE_INFINITY,
-                ease: "linear"
-              } : {
-                duration: 0.3,
-                ease: "easeInOut"
-              }
+            className={`floating-path ${isAnimated ? 'animate-float' : ''}`}
+            style={{
+              animationDelay: `${Math.random() * 5}s`,
+              animationDuration: `${isMobile ? 15 + Math.random() * 8 : 20 + Math.random() * 10}s`
             }}
           />
         ))}
