@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 212 35% 19%; /* HSL equivalent of #202F42 */
+    --foreground: 225 33% 97%; /* #F3F4F9 */
+
+    --card: 240 4% 12%; /* #1E1D24 - This is card-dark */
+    --card-foreground: 225 33% 97%;
+
+    --popover: 212 35% 19%; /* Match new background */
+    --popover-foreground: 225 33% 97%;
+
+    --primary: 235 98% 65%; /* #3449FC */
+    --primary-foreground: 220 13% 10%; /* Dark text for primary buttons */
+
+    --secondary: 240 4% 12%;
+    --secondary-foreground: 225 33% 97%;
+
+    --muted: 240 4% 12%;
+    --muted-foreground: 240 4% 65%; /* Muted text */
+
+    --accent: 71 97% 55%; /* #CCFC1A */
+    --accent-foreground: 240 4% 10%; /* Dark text for accent */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 4% 15%;
+    --input: 240 4% 15%;
+    --ring: 235 98% 65%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-primary-bg text-main-text; /* bg-primary-bg will use #202F42 from tailwind.config.ts */
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .project-label-heading {
+    font-size: 20px;
+    font-weight: 400; /* equivalent to font-normal */
+    margin-bottom: 0.75rem; /* equivalent to mb-3 */
+    color: #a1a1aa; /* Muted text color */
+  }
+
+  .liquid-glass-card {
+    /* Warm glass tint */
+    background: rgba(255, 248, 240, 0.04); /* Warm white */
+    -webkit-backdrop-filter: blur(20px) saturate(220%) hue-rotate(10deg);
+    
+    border: 1px solid rgba(255, 248, 240, 0.1);
+    border-radius: 1rem;
+    
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 248, 240, 0.08);
+}
+
+
+  /* .liquid-glass-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transform: skewX(-30deg) translateX(-200%);
+    animation: shimmer 10s ease-in-out infinite;
+    animation-delay: 2s;
+  }*/
+
+
+}
+
+@keyframes shimmer {
+  100% {
+    transform: skewX(-30deg) translateX(400%);
+  }
+}
+
+/* Floating paths background styles */
+.floating-paths-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.floating-paths-container svg {
+  width: 100%;
+  height: 100%;
+}
+
+.help-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.help-child {
+  grid-column-gap: 1px;
+  grid-row-gap: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  width: calc(33.333% - 0.667rem);
+  padding: 24px;
+  display: flex;
+}
+
+@media (max-width: 750px) {
+  .help-child {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Mobile gallery styles */
+.mobile-gallery-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-gallery-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: none;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  padding: 1rem 0;
+  gap: 1rem;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: pan-x pan-y;
+}
+
+.mobile-gallery-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.mobile-gallery-scroll.cursor-grabbing {
+  cursor: grabbing;
+}
+
+.mobile-gallery-item {
+  flex: 0 0 85%;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+@supports (-webkit-mask-composite: xor) {
+  .group-hover\:opacity-100 {
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Adjust based on the height of your sticky header */
+}
+
+/* Smooth transition for the navigation bar */
+header {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Ensure the mobile menu overlay is always visible when open */
+.mobile-menu-overlay {
+  transition: opacity 0.4s ease-in-out;
+}
+
+@layer utilities {
+  @keyframes blink-cursor {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  .animate-blink-cursor {
+    animation: blink-cursor 0.8s step-end infinite;
+  }
+
+  /* Custom class for lifted text effect - SEVERELY NOTICEABLE FOR TESTING */
+  .text-lifted {
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7); /* Very large, dark shadow */
+    -webkit-text-stroke-width: 1.5px; /* Very thick stroke */
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.8); /* Almost opaque black stroke */
+    paint-order: stroke fill;
+  }
+}
