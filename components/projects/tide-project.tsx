@@ -82,7 +82,7 @@ export default function TideProject() {
           ))}
         </motion.div>
         <div className="flex justify-center mt-10 pr-6 md:pr-0">
-          <MainCTA href="https://www.figma.com/deck/h331RjMy2vUYwAUtjYtwU9/Nasko-case-studies?node-id=4036-586&p=f&viewport=25%2C333%2C0.06&t=GtrET0Icp83gn1N8-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">
+          <MainCTA href="https://app.pitch.com/app/player/bbdfda9b-8742-42ce-953e-6ff650d8bfa1/aa660b39-43fb-4b3b-bcb7-61e1d8f63829">
             View case study
           </MainCTA>
         </div>
