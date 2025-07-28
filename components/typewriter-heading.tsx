@@ -147,7 +147,7 @@ export default function TypewriterHeading({
     h1Styles.overflow = "hidden"
   } else {
     h1Styles.minHeight = "1.3em"
-    h1Styles.height = "107px" // Desktop height
+    h1Styles.height = "120px" // Desktop height - increased from 107px
   }
 
   const staticPrefixStyles: React.CSSProperties = {}

@@ -285,9 +285,7 @@ header {
 
   /* Custom class for lifted text effect - SEVERELY NOTICEABLE FOR TESTING */
   .text-lifted {
-    text-shadow: 0px 2.5px 5px rgba(0, 0, 0, 0.7); /* Very large, dark shadow */
-    -webkit-text-stroke-width: 1.5px; /* Very thick stroke */
-    -webkit-text-stroke-color: rgba(0, 0, 0, 0.8); /* Almost opaque black stroke */
+    text-shadow: 0px 1.25px 2.5px rgba(0, 0, 0, 0.7); /* Very large, dark shadow */
     paint-order: stroke fill;
   }
 }
