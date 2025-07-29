@@ -26,9 +26,9 @@ export default function TypewriterHeading({
   phrases = [],
   typingDelay = 80,
   deletingDelay = 35,
-  pauseDelay = 1500,
-  h1ClassName = "text-3xl md:text-4xl lg:text-5xl font-bold text-main-text leading-[2.2]",
+  pauseDelay = 1500,  h1ClassName = "text-3xl md:text-4xl lg:text-5xl font-bold text-main-text leading-[2.2]",
   phraseSpecificStyles = {},
+
 }: TypewriterHeadingProps) {
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0)
   const [displayedPhrase, setDisplayedPhrase] = useState("")
@@ -143,7 +143,7 @@ export default function TypewriterHeading({
   if (isMobile) {
     h1Styles.display = "flex"
     h1Styles.flexDirection = "column"
-    h1Styles.height = "200px" // Mobile height
+    h1Styles.height = "280px" // Mobile height
     h1Styles.overflow = "hidden"
   } else {
     h1Styles.minHeight = "1.3em"
