@@ -75,11 +75,11 @@ export default function StickyNav() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-30 px-4 sm:px-8 md:px-8 py-4 backdrop-blur-sm bg-primary-bg/80 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-30 px-2 sm:px-4 md:px-0 py-4 backdrop-blur-sm bg-primary-bg/80 transition-all duration-300 ${
           isScrolled ? "shadow-[0_4px_20px_-4px_rgba(0,0,0,0.2)]" : ""
         } transform ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
       >
-        <div className="max-w-[940px] mx-auto flex items-center justify-between">
+        <div className="max-w-[1280px] mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
             <Image
               src="https://cdn.prod.website-files.com/62a720ecb0d1768ffdfcf075/66640d623f05fc5b8390eca8_nasko-snow-round-2.png"

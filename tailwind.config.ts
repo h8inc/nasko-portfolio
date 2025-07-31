@@ -23,12 +23,14 @@ const config = {
       fontFamily: {
         sans: ["var(--font-manrope)", ...defaultTheme.fontFamily.sans],
         montserrat: ["var(--font-montserrat)", ...defaultTheme.fontFamily.sans],
+        "aeonik-extended": ["var(--font-aeonik-extended)", ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        "primary-bg": "#202F42", // Updated main background color
+        "primary-bg": "#222222", // Updated main background color
         "project-blue": "#3449FC",
         "main-text": "#F3F4F9",
         "accent-lime": "#CCFC1A",
+        "floating-paths": "#4A4458",
         "muted-text": "#A1A1AA",
         "card-dark": "#1E1D23", // Base color for transparent cards
         "card-active-bg": "#354AFB",

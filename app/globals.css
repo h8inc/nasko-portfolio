@@ -4,13 +4,13 @@
 
 @layer base {
   :root {
-    --background: 212 35% 19%; /* HSL equivalent of #202F42 */
+    --background: 0 0% 13%; /* HSL equivalent of #222222 */
     --foreground: 225 33% 97%; /* #F3F4F9 */
 
     --card: 240 4% 12%; /* #1E1D24 - This is card-dark */
     --card-foreground: 225 33% 97%;
 
-    --popover: 212 35% 19%; /* Match new background */
+    --popover: 0 0% 13%; /* Match new background */
     --popover-foreground: 225 33% 97%;
 
     --primary: 235 98% 65%; /* #3449FC */
@@ -41,7 +41,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-primary-bg text-main-text; /* bg-primary-bg will use #202F42 from tailwind.config.ts */
+    @apply bg-primary-bg text-main-text; /* bg-primary-bg will use #222222 from tailwind.config.ts */
   }
   html {
     scroll-behavior: smooth;

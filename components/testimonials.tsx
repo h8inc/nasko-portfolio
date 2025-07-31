@@ -141,7 +141,7 @@ export default function TestimonialsSection() {
 
   return (
     <div className="w-full">
-      <div className="max-w-[940px] mx-auto px-4 sm:px-8 md:px-0">
+      <div className="max-w-[1280px] mx-auto px-2 sm:px-4 md:px-0">
         <h2 className="text-[20px] font-normal text-muted-text mb-8">What people are saying</h2>
       </div>
       <div className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen overflow-hidden">

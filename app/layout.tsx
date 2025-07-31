@@ -1,7 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next" // Metadata type can still be used
 import ClientLayout from "./clientLayout"
-import { montserrat, manrope } from "@/app/fonts"
+import { montserrat, manrope, aeonikExtended } from "@/app/fonts"
 import "@/app/globals.css"
 
 // Metadata can still be exported from a client component in Next.js 13+ App Router
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${manrope.variable} ${montserrat.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${manrope.variable} ${montserrat.variable} ${aeonikExtended.variable}`}>
       <head />
       <body className="relative">
         <ClientLayout>{children}</ClientLayout>

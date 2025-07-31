@@ -14,7 +14,7 @@ export default function Header() {
         <span className="text-lg text-gray-900">Nasko Terziev</span>
       </div>
 
-      <h1 className="text-[2.5rem] font-normal leading-[130%] text-[#162c29] mb-4">
+      <h1 className="text-[2.5rem] font-normal leading-[130%] text-[#162c29] mb-4 font-aeonik-extended tracking-wider">
         Designer & PM for startups and scale ups
       </h1>
       <p className="text-xl text-gray-500 mb-32 md:mb-60">Indie Hacker and Hobbyist Coder</p>
