@@ -40,10 +40,12 @@ export default function MobileImageGallery({ images, className = "" }: MobileIma
             <Image
               src={image.src || "/placeholder.svg"}
               alt={image.alt}
-              width={image.width}
-              height={image.height}
+              width={image.width * 2}
+              height={image.height * 2}
               className="mobile-gallery-image"
               priority={index < 2}
+              unoptimized={true}
+              quality={100}
             />
           </motion.div>
         ))}
