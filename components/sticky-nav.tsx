@@ -79,7 +79,7 @@ export default function StickyNav() {
           isScrolled ? "shadow-[0_4px_20px_-4px_rgba(0,0,0,0.2)]" : ""
         } transform ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
       >
-        <div className="max-w-[940px] mx-auto flex items-center justify-between">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
             <Image
               src="https://cdn.prod.website-files.com/62a720ecb0d1768ffdfcf075/66640d623f05fc5b8390eca8_nasko-snow-round-2.png"

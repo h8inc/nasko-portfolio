@@ -15,6 +15,7 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
+    unoptimized: true, // Disable all image optimization for maximum quality
     remotePatterns: [
       {
         protocol: 'https',
@@ -33,7 +34,7 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-  swcMinify: false,
+
 }
 
 mergeConfig(nextConfig, userConfig)

@@ -29,12 +29,15 @@ export default function HeroSection() {
 
       {/* Adjusted top and bottom margins for the TypewriterHeading container */}
       <div className="mt-32 md:mt-44 mb-36 md:mb-48 md:min-h-[60px] md:flex md:items-center">
-        <TypewriterHeading
-          staticPrefix="Hi, my name is Nasko. I am "
-          phrases={heroPhrases}
-          phraseSpecificStyles={heroPhraseStyles}
-          h1ClassName={`text-[48px] leading-[1.2] font-bold text-main-text text-lifted`}
-        />
+        {/* Responsive width container for optimal headline readability */}
+        <div className="w-full max-w-[90vw] sm:max-w-[85vw] md:max-w-[800px] pr-4 sm:pr-0">
+          <TypewriterHeading
+            staticPrefix="Hi, my name is Nasko. I am "
+            phrases={heroPhrases}
+            phraseSpecificStyles={heroPhraseStyles}
+            h1ClassName={`text-[48px] leading-[1.2] font-bold text-main-text text-lifted`}
+          />
+        </div>
       </div>
     </>
   )

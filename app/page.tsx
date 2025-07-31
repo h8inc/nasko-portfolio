@@ -8,7 +8,7 @@ import AnimatedSection from "@/components/animated-section"
 
 export default function HomePage() {
   return (
-    <div className="max-w-[940px] mx-auto px-4 sm:px-8 md:px-0">
+    <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-0">
       <HeroSection />
 
       <AnimatedSection id="help-section-wrapper" className="my-12 md:my-14 scroll-mt-20" delay={0.2}>
