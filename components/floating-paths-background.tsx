@@ -138,8 +138,13 @@ export default function FloatingPathsBackground({ isAnimated }: FloatingPathsBac
   return (
     <div className="fixed inset-0 w-full h-full z-0 overflow-hidden pointer-events-none">
       <div className="absolute inset-0 w-full h-full">
-        <FloatingPaths position={1} isAnimated={isAnimated && shouldAnimate} isMobile={isMobile} />
-        <FloatingPaths position={-1} isAnimated={isAnimated && shouldAnimate} isMobile={isMobile} />
+        {/* Only render floating paths on mobile - commented out for desktop due to performance issues */}
+        {isMobile && (
+          <>
+            <FloatingPaths position={1} isAnimated={isAnimated && shouldAnimate} isMobile={isMobile} />
+            <FloatingPaths position={-1} isAnimated={isAnimated && shouldAnimate} isMobile={isMobile} />
+          </>
+        )}
       </div>
     </div>
   )
