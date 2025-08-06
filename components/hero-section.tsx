@@ -36,7 +36,7 @@ export default function HeroSection() {
           staticPrefix="Hi, my name is Nasko. I am "
           phrases={heroPhrases}
           phraseSpecificStyles={heroPhraseStyles}
-          h1ClassName={`text-[48px] leading-[1.2] font-bold text-main-text text-lifted font-aeonik-extended tracking-wider`}
+          h1ClassName={`text-[42px] md:text-[48px] leading-[1.3] md:leading-[1.2] font-bold text-main-text text-lifted font-aeonik-extended tracking-wider`}
         />
       </div>
     </>
