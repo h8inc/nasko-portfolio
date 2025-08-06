@@ -25,13 +25,13 @@ function FloatingPaths({ position, isAnimated, isMobile }: FloatingPathsProps) {
   const paths = Array.from({ length: pathCount }, (_, i) => ({
     id: i,
     d: isMobile 
-      ? `M${800 + i * 20 * position} ${1400 + i * 20}C${
-          800 + i * 20 * position
-        } ${1400 + i * 20} ${600 + i * 20 * position} ${800 - i * 20} ${
-          400 + i * 20 * position
-        } ${600 - i * 20}C${200 + i * 20 * position} ${400 - i * 20} ${
-          0 + i * 20 * position
-        } ${200 - i * 20} ${0 + i * 20 * position} ${200 - i * 20}`
+      ? `M${800} ${1400}C${
+          800
+        } ${1400} ${600 - i * 15 * position} ${800 - i * 15} ${
+          400 - i * 15 * position
+        } ${600 - i * 15}C${200 - i * 15 * position} ${400 - i * 15} ${
+          0
+        } ${0} ${0} ${0}`
       : `M${696 + i * 8 * position} ${316 + i * 10}C${
           696 + i * 8 * position
         } ${316 + i * 10} ${500 + i * 8 * position} ${200 - i * 10} ${
