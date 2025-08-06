@@ -21,30 +21,31 @@ function FloatingPaths({ position, isAnimated, isMobile }: FloatingPathsProps) {
   const viewBoxWidth = isMobile ? 800 : 696
   const viewBoxHeight = isMobile ? 1400 : 316
 
+  // Create paths that enter from bottom-right and exit to top-left
   const paths = Array.from({ length: pathCount }, (_, i) => ({
     id: i,
     d: isMobile 
-      ? `M-${400 - i * 20 * position} -${600 + i * 20}C-${
-          400 - i * 20 * position
-        } -${600 + i * 20} -${300 - i * 20 * position} ${200 - i * 20} ${
-          200 - i * 20 * position
-        } ${800 - i * 20}C${600 - i * 20 * position} ${1000 - i * 20} ${
-          700 - i * 20 * position
-        } ${1200 - i * 20} ${700 - i * 20 * position} ${1200 - i * 20}`
-      : `M-${380 - i * 8 * position} -${189 + i * 10}C-${
-          380 - i * 8 * position
-        } -${189 + i * 10} -${312 - i * 8 * position} ${216 - i * 10} ${
-          152 - i * 8 * position
-        } ${343 - i * 10}C${616 - i * 8 * position} ${470 - i * 10} ${
-          684 - i * 8 * position
-        } ${875 - i * 10} ${684 - i * 8 * position} ${875 - i * 10}`,
+      ? `M${800 + i * 20 * position} ${1400 + i * 20}C${
+          800 + i * 20 * position
+        } ${1400 + i * 20} ${600 + i * 20 * position} ${800 - i * 20} ${
+          400 + i * 20 * position
+        } ${600 - i * 20}C${200 + i * 20 * position} ${400 - i * 20} ${
+          0 + i * 20 * position
+        } ${200 - i * 20} ${0 + i * 20 * position} ${200 - i * 20}`
+      : `M${696 + i * 8 * position} ${316 + i * 10}C${
+          696 + i * 8 * position
+        } ${316 + i * 10} ${500 + i * 8 * position} ${200 - i * 10} ${
+          300 + i * 8 * position
+        } ${100 - i * 10}C${100 + i * 8 * position} ${0 - i * 10} ${
+          0 + i * 8 * position
+        } ${-50 - i * 10} ${0 + i * 8 * position} ${-50 - i * 10}`,
     width: baseStrokeWidth + i * strokeWidthIncrement,
     baseStrokeOpacity: baseOpacity + i * opacityIncrement,
   }))
 
-  // Use consistent opacity values for smooth transitions
-  const staticOpacityValue = 1.0
-  const animatedOpacityValue = 1.0
+  // Animation timing
+  const baseDuration = isMobile ? 15 : 20
+  const delayBetweenPaths = 0.2 // 200ms delay between each path
 
   return (
     <div className="absolute inset-0 pointer-events-none">
@@ -62,29 +63,36 @@ function FloatingPaths({ position, isAnimated, isMobile }: FloatingPathsProps) {
             stroke="currentColor"
             strokeWidth={path.width}
             strokeOpacity={path.baseStrokeOpacity}
-            variants={{
-              static: {
-                pathLength: 1,
-                opacity: staticOpacityValue / path.baseStrokeOpacity,
-                pathOffset: 0,
-              },
-              animated: {
-                pathLength: 1,
-                opacity: animatedOpacityValue / path.baseStrokeOpacity,
-                pathOffset: [0, 1, 0],
-              },
+            initial={{
+              pathLength: 0,
+              opacity: 0,
+              pathOffset: 1, // Start from the end (hidden)
             }}
-            initial="static"
-            animate={isAnimated ? "animated" : "static"}
+            animate={isAnimated ? {
+              pathLength: 1,
+              opacity: 1,
+              pathOffset: [1, 0, 1], // Move from end to start to end
+            } : {
+              pathLength: 0,
+              opacity: 0,
+              pathOffset: 1,
+            }}
             transition={{
+              pathLength: { 
+                duration: 0.5,
+                ease: "easeInOut",
+                delay: path.id * delayBetweenPaths
+              },
               opacity: { 
-                duration: 0.3,
-                ease: "easeInOut" 
+                duration: 0.5,
+                ease: "easeInOut",
+                delay: path.id * delayBetweenPaths
               },
               pathOffset: isAnimated ? {
-                duration: isMobile ? 15 + Math.random() * 8 : 20 + Math.random() * 10,
+                duration: baseDuration + Math.random() * 5,
                 repeat: Number.POSITIVE_INFINITY,
-                ease: "linear"
+                ease: "linear",
+                delay: path.id * delayBetweenPaths
               } : {
                 duration: 0.3,
                 ease: "easeInOut"
@@ -118,12 +126,12 @@ export default function FloatingPathsBackground({ isAnimated }: FloatingPathsBac
 
   useEffect(() => {
     const handleScroll = () => {
-      // Start animation when "help-section-wrapper" reaches the top of viewport
-      const helpSection = document.getElementById('help-section-wrapper')
-      if (helpSection) {
-        const rect = helpSection.getBoundingClientRect()
-        // Start animation when help section is at or above the top of the screen
-        const shouldStartAnimating = rect.top <= 0
+      // Start animation when hero typewriter exits the viewport (bottom reaches top of screen)
+      const heroSection = document.querySelector('[data-hero-typewriter]')
+      if (heroSection) {
+        const rect = heroSection.getBoundingClientRect()
+        // Start animation when hero section's bottom reaches the top of the screen
+        const shouldStartAnimating = rect.bottom <= 0
         setShouldAnimate(prev => prev !== shouldStartAnimating ? shouldStartAnimating : prev)
       }
     }
@@ -138,13 +146,11 @@ export default function FloatingPathsBackground({ isAnimated }: FloatingPathsBac
   return (
     <div className="fixed inset-0 w-full h-full z-0 overflow-hidden pointer-events-none">
       <div className="absolute inset-0 w-full h-full">
-        {/* Only render floating paths on mobile - commented out for desktop due to performance issues */}
-        {isMobile && (
-          <>
-            <FloatingPaths position={1} isAnimated={isAnimated && shouldAnimate} isMobile={isMobile} />
-            <FloatingPaths position={-1} isAnimated={isAnimated && shouldAnimate} isMobile={isMobile} />
-          </>
-        )}
+        {/* Floating paths for both mobile and desktop */}
+        <>
+          <FloatingPaths position={1} isAnimated={isAnimated && shouldAnimate} isMobile={isMobile} />
+          <FloatingPaths position={-1} isAnimated={isAnimated && shouldAnimate} isMobile={isMobile} />
+        </>
       </div>
     </div>
   )
