@@ -34,7 +34,7 @@ export default function SalesDeskProject() {
       <div className="grid md:grid-cols-3 gap-10 mb-28 text-main-text/90">
         <div className="md:col-span-2">
           <div className="project-label-heading">Summary:</div>
-          <p className="text-base">
+          <p className="text-base font-aeonik-regular">
             Conducted foundational user research to inform the product direction for a new AI-powered CRM. This project involved working closely with the founders, recruitment strategy and in-depth user interviews, competitive analysis, and market research to identify key pain points and opportunities. The insights were synthesized into detailed user personas and journey maps, which laid the groundwork for the core UX strategy and feature prioritization.
           </p>
         </div>

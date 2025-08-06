@@ -28,7 +28,7 @@ export default function HelpSection() {
 
   return (
     <div id="help-section" className="mb-64">
-      <motion.h2 className="text-[20px] font-normal text-muted-text mb-8" variants={fadeIn("up", 0.1)}>
+      <motion.h2 className="text-[20px] font-normal text-muted-text mb-8 font-aeonik-regular" variants={fadeIn("up", 0.1)}>
         3 ways I can help
       </motion.h2>
       <div className="help-container">

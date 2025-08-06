@@ -11,7 +11,7 @@ export default function Header() {
           height={48}
           className="rounded-full"
         />
-        <span className="text-lg text-gray-900">Nasko Terziev</span>
+        <span className="text-lg text-gray-900 font-aeonik-regular">Nasko Terziev</span>
       </div>
 
       <h1 className="text-[2.5rem] font-normal leading-[130%] text-[#162c29] mb-4 font-aeonik-extended tracking-wider">

@@ -21,7 +21,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-manrope)", ...defaultTheme.fontFamily.sans],
+        sans: ["var(--font-aeonik-regular)", ...defaultTheme.fontFamily.sans],
         montserrat: ["var(--font-montserrat)", ...defaultTheme.fontFamily.sans],
         "aeonik-extended": ["var(--font-aeonik-extended)", ...defaultTheme.fontFamily.sans],
         "aeonik-regular": ["var(--font-aeonik-regular)", ...defaultTheme.fontFamily.sans],

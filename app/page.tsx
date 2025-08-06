@@ -20,7 +20,7 @@ export default function HomePage() {
       </AnimatedSection>
 
       <AnimatedSection id="selected-projects-wrapper" className="my-16 md:my-32 scroll-mt-20" delay={0.4}>
-        <h2 className="text-[20px] font-normal text-muted-text mb-8">Some of my work</h2>
+        <h2 className="text-[20px] font-normal text-muted-text mb-8 font-aeonik-regular">Some of my work</h2>
         <SelectedProjects />
       </AnimatedSection>
 
@@ -29,7 +29,7 @@ export default function HomePage() {
       </AnimatedSection>
 
       <AnimatedSection id="side-gigs-wrapper" className="my-16 md:my-32 scroll-mt-20" delay={0.5}>
-        <h2 className="text-[20px] font-normal text-muted-text mb-8">Side Gigs & Experiments</h2>
+        <h2 className="text-[20px] font-normal text-muted-text mb-8 font-aeonik-regular">Side Gigs & Experiments</h2>
         <SideGigs />
       </AnimatedSection>
 

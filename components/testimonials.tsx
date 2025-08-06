@@ -104,10 +104,10 @@ const TestimonialCard = ({
     style={colorStyle as CSSProperties}
     whileHover={{ zIndex: 10 }}
   >
-    <blockquote className="text-base text-main-text/90 leading-relaxed">"{testimonial.quote}"</blockquote>
+    <blockquote className="text-base text-main-text/90 leading-relaxed font-aeonik-regular">"{testimonial.quote}"</blockquote>
     <div className="mt-4 text-right">
       <p className="font-semibold text-main-text">{testimonial.author}</p>
-      <p className="text-sm text-muted-text">
+      <p className="text-sm text-muted-text font-aeonik-regular">
         {testimonial.role}, {testimonial.company}
       </p>
     </div>
@@ -142,7 +142,7 @@ export default function TestimonialsSection() {
   return (
     <div className="w-full">
       <div className="max-w-[1280px] mx-auto px-2 sm:px-4 md:px-0">
-        <h2 className="text-[20px] font-normal text-muted-text mb-8">What people are saying</h2>
+        <h2 className="text-[20px] font-normal text-muted-text mb-8 font-aeonik-regular">What people are saying</h2>
       </div>
       <div className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen overflow-hidden">
         <motion.div

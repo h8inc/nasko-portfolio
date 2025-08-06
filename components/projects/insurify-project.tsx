@@ -73,7 +73,7 @@ export default function InsurifyProject() {
       <div className="grid md:grid-cols-4 gap-10 mb-28 text-main-text/90">
         <div>
           <div className="project-label-heading">Summary:</div>
-          <p className="text-base">
+          <p className="text-base font-aeonik-regular">
             New website, product interface revamp, and the first design system. Hired two designers, led a dozen of A/B
             tests and releases. We achieved a 32% increase in conversions and a 20% month-over-month sales increase,
             totalling an additional $1.2 million of revenue each month.
@@ -81,14 +81,14 @@ export default function InsurifyProject() {
         </div>
         <div>
           <div className="project-label-heading">Role:</div>
-          <div className="text-base">
+          <div className="text-base font-aeonik-regular">
             <p>Lead product designer</p>
             <p>Growth product manager</p>
           </div>
         </div>
         <div>
           <div className="project-label-heading">Skills:</div>
-          <div className="text-base">
+          <div className="text-base font-aeonik-regular">
             <p>Project management</p>
             <p>Stakeholder mngmt</p>
             <p>User testing/research</p>
@@ -99,7 +99,7 @@ export default function InsurifyProject() {
         </div>
         <div>
           <div className="project-label-heading">Team:</div>
-          <div className="text-base">
+          <div className="text-base font-aeonik-regular">
             <p>Myself</p>
             <p>2 designers</p>
             <p>CPO, VP of marketing</p>

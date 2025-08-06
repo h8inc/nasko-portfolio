@@ -41,7 +41,7 @@ export default function InnerGlow() {
             digitally—all without waiting for service staff. This approach caters to the digital-first preferences of
             younger generations who value convenience, speed, and contactless interactions.
           </p>
-          <p className="text-base mt-4">
+          <p className="text-base mt-4 font-aeonik-regular">
             What sets Opaa apart is its comprehensive support for various payment methods including cryptocurrency
             options like Bitcoin and Stablecoins. This flexibility addresses the growing demand for alternative payment
             solutions in Eastern European markets, where digital adoption is rapidly accelerating but international

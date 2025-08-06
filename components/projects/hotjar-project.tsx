@@ -51,21 +51,21 @@ export default function HotjarProject() {
       <div className="grid md:grid-cols-4 gap-10 mb-28 text-main-text/90">
         <div>
           <div className="project-label-heading">Summary:</div>
-          <p className="text-base">
+          <p className="text-base font-aeonik-regular">
             Enhanced the initial interactions for thousands of new Hotjar customers. Worked on pricing, sign-up, and
             onboarding experience, resulting in a threefold increase in activation from our target customers.
           </p>
         </div>
         <div>
           <div className="project-label-heading">Role:</div>
-          <div className="text-base">
+          <div className="text-base font-aeonik-regular">
             <p>Senior Product Designer</p>
             <p>Product Manager</p>
           </div>
         </div>
         <div>
           <div className="project-label-heading">Skills:</div>
-          <div className="text-base">
+          <div className="text-base font-aeonik-regular">
             <p>Product strategy</p>
             <p>User experience</p>
             <p>User testing/research</p>
@@ -75,7 +75,7 @@ export default function HotjarProject() {
         </div>
         <div>
           <div className="project-label-heading">Team:</div>
-          <div className="text-base">
+          <div className="text-base font-aeonik-regular">
             <p>1 designer</p>
             <p>8 full-stack engineers</p>
             <p>2 product managers</p>

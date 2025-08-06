@@ -41,7 +41,7 @@ export default function ClarifyTools() {
             centerpiece includes a time-savings calculator and a visualization tool that demonstrate the stark contrast
             between traditional manual CRM workflows and Clarify's AI-native approach.
           </p>
-          <p className="text-base mt-4">
+          <p className="text-base mt-4 font-aeonik-regular">
             The tool serves as an asset in Clarify's Go-To-Market strategy, allowing potential customers to input their
             current sales data and instantly see how Clarify's AI capabilities could transform their workflow. The
             side-by-side comparison vividly illustrates how sales professionals can reclaim hours previously lost to

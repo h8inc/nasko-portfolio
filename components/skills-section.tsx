@@ -9,7 +9,7 @@ export default function SkillsSection() {
   /*
   return (
     <motion.div className="mb-60" initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.25 }}>
-      <motion.h2 className="text-[20px] font-normal text-muted-text mb-8" variants={fadeIn("up", 0.1)}>
+      <motion.h2 className="text-[20px] font-normal text-muted-text mb-8 font-aeonik-regular" variants={fadeIn("up", 0.1)}>
         Here's the spread of my skills
       </motion.h2>
       <motion.div className="hidden md:block" variants={fadeIn("up", 0.3)}>

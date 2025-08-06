@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function Skills() {
   return (
     <div className="mb-32 md:mb-64">
-      <h2 className="text-base font-normal text-gray-600 mb-8">Here's the spread of my skills</h2>
+      <h2 className="text-base font-normal text-gray-600 mb-8 font-aeonik-regular">Here's the spread of my skills</h2>
       <div className="hidden md:block">
         <Image
           src="https://cdn.prod.website-files.com/62a720ecb0d1768ffdfcf075/6739dda5ebf91b07fc6504d7_myskills-desktop.png"
