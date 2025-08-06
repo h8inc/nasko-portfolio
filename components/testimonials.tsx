@@ -3,7 +3,6 @@
 import { motion, useMotionValue, useAnimationFrame } from "framer-motion"
 import { cn } from "@/lib/utils"
 import { useRef, useState } from "react"
-import type { CSSProperties } from "react"
 
 interface Testimonial {
   id: number
@@ -75,24 +74,12 @@ const cardLayoutStyles = [
   { rotate: "rotate-[1deg]", translateY: "translate-y-[-10px]" },
 ]
 
-// Color styles for the cards
-const cardColorStyles = [
-  { background: "rgba(53, 74, 251, 0.1)", borderColor: "rgba(53, 74, 251, 0.2)" }, // #354AFB - Blue
-  { background: "rgba(204, 252, 26, 0.1)", borderColor: "rgba(204, 252, 26, 0.2)" }, // #CCFC1A - Lime
-  { background: "rgba(179, 153, 251, 0.1)", borderColor: "rgba(179, 153, 251, 0.2)" }, // #B399FB - Lavender
-  { background: "rgba(255, 138, 216, 0.1)", borderColor: "rgba(255, 138, 216, 0.2)" }, // Pink
-  { background: "rgba(255, 194, 138, 0.1)", borderColor: "rgba(255, 194, 138, 0.2)" }, // Orange
-  { background: "rgba(122, 253, 214, 0.1)", borderColor: "rgba(122, 253, 214, 0.2)" }, // Teal
-]
-
 const TestimonialCard = ({
   testimonial,
   layoutStyle,
-  colorStyle,
 }: {
   testimonial: Testimonial
   layoutStyle: (typeof cardLayoutStyles)[0]
-  colorStyle: (typeof cardColorStyles)[0]
 }) => (
   <motion.div
     className={cn(
@@ -101,7 +88,6 @@ const TestimonialCard = ({
       layoutStyle.rotate,
       layoutStyle.translateY,
     )}
-    style={colorStyle as CSSProperties}
     whileHover={{ zIndex: 10 }}
   >
     <blockquote className="text-base text-main-text/90 leading-relaxed font-aeonik-regular">"{testimonial.quote}"</blockquote>
@@ -163,7 +149,6 @@ export default function TestimonialsSection() {
               key={index}
               testimonial={testimonial}
               layoutStyle={cardLayoutStyles[index % cardLayoutStyles.length]}
-              colorStyle={cardColorStyles[index % cardColorStyles.length]}
             />
           ))}
         </motion.div>
