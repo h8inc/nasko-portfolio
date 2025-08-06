@@ -88,14 +88,14 @@ export default function StickyNav() {
               height={48}
               className="rounded-full"
             />
-            <span className="text-lg text-main-text font-normal">Nasko Terziev</span>
+            <span className="text-lg text-main-text font-normal font-aeonik-regular">Nasko Terziev</span>
           </div>
 
           {!isMobile && (
             <nav className="flex gap-6">
               <Link
                 href="#selected-projects"
-                className={`text-lg font-normal transition-colors ${
+                className={`text-lg font-normal transition-colors font-aeonik-regular ${
                   activeSection === "selected-projects" ? "text-accent-lime" : "text-muted-text"
                 }`}
                 onClick={(e) => {
@@ -107,7 +107,7 @@ export default function StickyNav() {
               </Link>
               <Link
                 href="#testimonials-wrapper"
-                className={`text-lg font-normal transition-colors ${
+                className={`text-lg font-normal transition-colors font-aeonik-regular ${
                   activeSection === "testimonials-wrapper" ? "text-accent-lime" : "text-muted-text"
                 }`}
                 onClick={(e) => {
@@ -119,7 +119,7 @@ export default function StickyNav() {
               </Link>
               <Link
                 href="#side-gigs"
-                className={`text-lg font-normal transition-colors ${
+                className={`text-lg font-normal transition-colors font-aeonik-regular ${
                   activeSection === "side-gigs" ? "text-accent-lime" : "text-muted-text"
                 }`}
                 onClick={(e) => {

@@ -34,8 +34,8 @@ export default function HelpSection() {
       <div className="help-container">
         {helpItems.map((item) => (
           <motion.div className="help-child liquid-glass-card" key={item.title} variants={fadeIn("up", item.delay)}>
-            <div className="text-base font-normal text-main-text mb-2">{item.title}</div>
-            <div className="text-[28px] leading-[1.2] font-normal text-main-text mb-4 h-[108px]">
+            <div className="text-base font-normal text-main-text mb-2 font-aeonik-mono">{item.title}</div>
+            <div className="text-[28px] leading-[1.25] font-bold text-main-text mb-4 h-[108px] font-aeonik-extended">
               {item.description}
             </div>
             <div className="mt-auto">

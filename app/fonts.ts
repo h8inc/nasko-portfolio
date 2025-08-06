@@ -18,6 +18,7 @@ export const manrope = Manrope({
   variable: "--font-manrope", // Expose Manrope as a CSS variable
 })
 
+
 // Define Aeonik Extended as a local font
 export const aeonikExtended = localFont({
   src: [
@@ -39,4 +40,45 @@ export const aeonikExtended = localFont({
   ],
   display: "swap",
   variable: "--font-aeonik-extended",
+})
+
+// Define Aeonik Regular as a local font
+export const aeonikRegular = localFont({
+  src: [
+    {
+      path: "../public/fonts/AeonikProTRIAL-Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/AeonikProTRIAL-Medium.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/AeonikProTRIAL-Bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  display: "swap",
+  variable: "--font-aeonik-regular",
+})
+
+// Define Aeonik Mono as a local font
+export const aeonikMono = localFont({
+  src: [
+    {
+      path: "../public/fonts/AeonikMonoProTRIAL-Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/AeonikMonoProTRIAL-Medium.otf",
+      weight: "500",
+      style: "normal",
+    },
+  ],
+  display: "swap",
+  variable: "--font-aeonik-mono",
 })

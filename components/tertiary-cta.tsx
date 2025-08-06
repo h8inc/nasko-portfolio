@@ -11,6 +11,7 @@ export default function TertiaryCTA({ href, children, className, ...props }: Ter
     <a
       href={href}
       className={cn(
+        "text-sm text-accent-lime hover:text-white transition-colors flex items-center group font-semibold font-aeonik-regular",
         "text-sm text-accent-lime hover:text-white transition-colors flex items-center group font-semibold",
         className,
       )}

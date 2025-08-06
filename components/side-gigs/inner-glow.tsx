@@ -23,7 +23,7 @@ export default function InnerGlow() {
           <span className="text-[20px] text-main-text/80">Since 2025</span>
         </div>
 
-        <h3 className="text-[20px] md:text-5xl font-normal mb-10 leading-tight">
+        <h3 className="text-[20px] md:text-5xl font-semibold mb-10 leading-[1.15] font-aeonik-extended">
           Restaurant ordering with QR codes and digital payments in SE
         </h3>
 
@@ -35,7 +35,7 @@ export default function InnerGlow() {
       <div className="grid md:grid-cols-3 gap-10 mb-28 text-main-text/90">
         <div className="md:col-span-2">
           <div className="project-label-heading">Summary:</div>
-          <p className="text-base">
+          <p className="text-base font-aeonik-regular">
             Opaa is a point-of-sale system designed specifically for restaurants and cafes in Eastern Europe. The
             platform enables customers to scan QR codes at their tables to browse menus, place orders, and pay
             digitally—all without waiting for service staff. This approach caters to the digital-first preferences of
@@ -52,7 +52,7 @@ export default function InnerGlow() {
           <div className="project-label-heading">Tech Stack:</div>
           <TechStackList technologies={technologies} />
           <div className="project-label-heading mt-6">Role:</div>
-          <div className="text-base">
+          <div className="text-base font-aeonik-regular">
             <p>Co-Founder</p>
             <p>Product design</p>
             <p>Front-end</p>

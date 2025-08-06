@@ -50,6 +50,7 @@
 
 @layer components {
   .project-label-heading {
+    font-family: var(--font-aeonik-mono);
     font-size: 20px;
     font-weight: 400; /* equivalent to font-normal */
     margin-bottom: 0.75rem; /* equivalent to mb-3 */

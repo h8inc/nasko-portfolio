@@ -53,7 +53,7 @@ export default function TideProject() {
         </div>
 
         <motion.h3
-          className="text-[20px] md:text-5xl font-normal text-main-text mb-10 leading-tight pr-6 md:pr-0"
+          className="text-[20px] md:text-5xl font-semibold text-main-text mb-10 leading-[1.15] pr-6 md:pr-0 font-aeonik-extended"
           variants={fadeIn("up", 0.2)}
         >
           Fintech product <span className="block md:inline">from 0 to 8+ million in net revenue</span>
@@ -91,17 +91,17 @@ export default function TideProject() {
       <motion.div className="grid md:grid-cols-5 lg:grid-cols-6 gap-10 mb-28" variants={fadeIn("up", 0.4)}>
         <div className="md:col-span-3 lg:col-span-4">
           <div className="project-label-heading">Summary:</div>
-          <p className="text-base text-main-text/90 leading-relaxed mb-4">
+          <p className="text-base text-main-text/90 leading-relaxed font-aeonik-regular mb-4">
             As Staff Designer, I lead the design strategy for a comprehensive subscription service that integrates
             payroll, tax, reporting, invoicing, and accounting functionalities. My focus is on creating an easy-to-use
             and secure solution for small businesses. We've successfully scaled from 0 to over 20,000 subscribers and $8
             million in net revenue.
           </p>
-          <p className="text-base text-main-text/90 leading-relaxed mb-4">
+          <p className="text-base text-main-text/90 leading-relaxed font-aeonik-regular mb-4">
             In my day-to-day I use data-driven insights, AI and write code to prototype design artefacts, facilitating
             discussions and informing roadmaps.
           </p>
-          <p className="text-base text-main-text/90 leading-relaxed">
+          <p className="text-base text-main-text/90 leading-relaxed font-aeonik-regular">
             I've overseen two major information architecture redesigns, improved onboarding processes, and introduced a
             freemium model that significantly boosted net revenue. Working closely with the VP, Head of Product, and
             engineering leads we ensure strategic alignment and effectively fulfilling user needs. I'm also actively
@@ -111,7 +111,7 @@ export default function TideProject() {
         </div>
         <div className="md:col-span-2 lg:col-span-2">
           <div className="project-label-heading">Role:</div>
-          <div className="text-base text-main-text/90">
+          <div className="text-base text-main-text/90 font-aeonik-regular">
             <p>Fractional product manager/ staff designer</p>
             <p>Mentoring 2 designers, 2 junior PMs and a researcher</p>
           </div>

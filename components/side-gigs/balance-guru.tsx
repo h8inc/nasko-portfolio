@@ -24,7 +24,7 @@ export default function BalanceGuru() {
           <span className="text-[20px] text-main-text/80">2023-2024</span>
         </div>
 
-        <h3 className="text-[20px] md:text-5xl font-normal mb-10 leading-tight">
+        <h3 className="text-[20px] md:text-5xl font-semibold mb-10 leading-[1.15] font-aeonik-extended">
           The power of smart software and expert accountants, all in one place.
         </h3>
 
@@ -46,7 +46,7 @@ export default function BalanceGuru() {
       <div className="grid md:grid-cols-3 gap-10 mb-28 text-main-text/90">
         <div className="md:col-span-2">
           <div className="project-label-heading">Summary:</div>
-          <p className="text-base">
+          <p className="text-base font-aeonik-regular">
             BalanceGuru was an accounting automation platform designed to simplify financial management for businesses.
             Our journey began with thorough product discovery, building a list of interested customers, and launching an
             MVP that quickly gained traction. We generated traffic and onboarded two paying customers. However, after a
@@ -61,7 +61,7 @@ export default function BalanceGuru() {
           <div className="project-label-heading">Tech Stack:</div>
           <TechStackList technologies={technologies} />
           <div className="project-label-heading mt-6">Role:</div>
-          <div className="text-base">
+          <div className="text-base font-aeonik-regular">
             <p>Myself as full-stack design, development, and product strategy.</p>
             <p>Co-founder as back-end engineering, system architecture.</p>
           </div>

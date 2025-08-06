@@ -23,7 +23,7 @@ export default function TideAi() {
           <span className="text-[20px] text-main-text/80">2025</span>
         </div>
 
-        <h3 className="text-[20px] md:text-5xl font-normal mb-10 leading-tight">AI-assistant for 3000+ employees</h3>
+        <h3 className="text-[20px] md:text-5xl font-semibold mb-10 leading-[1.15] font-aeonik-extended">AI-assistant for 3000+ employees</h3>
 
         <div className="flex justify-center mb-6">
           <MainCTA href="https://tide-ai-mock.vercel.app/">Sandbox</MainCTA>
@@ -33,7 +33,7 @@ export default function TideAi() {
       <div className="grid md:grid-cols-3 gap-10 mb-28 text-main-text/90">
         <div className="md:col-span-2">
           <div className="project-label-heading">Summary:</div>
-          <p className="text-base">
+          <p className="text-base font-aeonik-regular">
             Developed an AI-assistant for Tide employees from various departments and use cases. A powerful knowledge
             bot that increases velocity, decreases silos, and enables cross-team collaboration.
           </p>
@@ -42,7 +42,7 @@ export default function TideAi() {
           <div className="project-label-heading">Tech Stack:</div>
           <TechStackList technologies={technologies} />
           <div className="project-label-heading mt-6">Team:</div>
-          <div className="text-base">
+          <div className="text-base font-aeonik-regular">
             <p>1 product AI engineer</p>
             <p>Myself</p>
           </div>

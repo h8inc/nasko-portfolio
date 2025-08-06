@@ -23,7 +23,7 @@ export default function ClarifyTools() {
           <span className="text-[20px] text-main-text/80">2025</span>
         </div>
 
-        <h3 className="text-[20px] md:text-5xl font-normal mb-10 leading-tight">
+        <h3 className="text-[20px] md:text-5xl font-semibold mb-10 leading-[1.15] font-aeonik-extended">
           Engineering-as-marketing: showcasing the benefits of an AI-powered CRM that saves time in building relationships
         </h3>
 
@@ -36,7 +36,7 @@ export default function ClarifyTools() {
       <div className="grid md:grid-cols-3 gap-10 mb-28 text-main-text/90">
         <div className="md:col-span-2">
           <div className="project-label-heading">Summary:</div>
-          <p className="text-base">
+          <p className="text-base font-aeonik-regular">
             Developed an interactive marketing tool for Clarify, a next-generation AI-first CRM platform. The
             centerpiece includes a time-savings calculator and a visualization tool that demonstrate the stark contrast
             between traditional manual CRM workflows and Clarify's AI-native approach.
@@ -53,7 +53,7 @@ export default function ClarifyTools() {
           <div className="project-label-heading">Tech Stack:</div>
           <TechStackList technologies={technologies} />
           <div className="project-label-heading mt-6">Target Audience:</div>
-          <div className="text-base">
+          <div className="text-base font-aeonik-regular">
             <p>Sales leaders and executives</p>
             <p>Real estate professionals</p>
             <p>Sales operations managers</p>

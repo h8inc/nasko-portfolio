@@ -17,7 +17,7 @@ export function TechBadge({ tech, variant = "default", size = "md", className, .
   return (
     <span
       className={cn(
-        "inline-flex items-center rounded-md font-medium bg-accent-lime/10 text-accent-lime ring-1 ring-inset ring-accent-lime/20",
+        "inline-flex items-center rounded-md font-medium bg-accent-lime/10 text-accent-lime ring-1 ring-inset ring-accent-lime/20 font-aeonik-mono",
         sizeStyles[size],
         className,
       )}
