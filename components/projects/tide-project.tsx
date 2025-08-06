@@ -53,7 +53,7 @@ export default function TideProject() {
         </div>
 
         <motion.h3
-          className="text-[20px] md:text-5xl font-semibold text-main-text mb-10 leading-[1.15] pr-6 md:pr-0 font-aeonik-extended"
+          className="text-[20px] md:text-5xl font-medium text-main-text mb-10 leading-[1.3] pr-6 md:pr-0 font-aeonik-extended"
           variants={fadeIn("up", 0.2)}
         >
           Fintech product <span className="block md:inline">from 0 to 8+ million in net revenue</span>

@@ -23,7 +23,7 @@ export default function InnerGlow() {
           <span className="text-[20px] text-main-text/80">Since 2025</span>
         </div>
 
-        <h3 className="text-[20px] md:text-5xl font-semibold mb-10 leading-[1.15] font-aeonik-extended">
+        <h3 className="text-[20px] md:text-5xl font-medium mb-10 leading-[1.3] font-aeonik-extended">
           Restaurant ordering with QR codes and digital payments in SE
         </h3>
 

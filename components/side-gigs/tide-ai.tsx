@@ -23,7 +23,7 @@ export default function TideAi() {
           <span className="text-[20px] text-main-text/80">2025</span>
         </div>
 
-        <h3 className="text-[20px] md:text-5xl font-semibold mb-10 leading-[1.15] font-aeonik-extended">AI-assistant for 3000+ employees</h3>
+        <h3 className="text-[20px] md:text-5xl font-medium mb-10 leading-[1.3] font-aeonik-extended">AI-assistant for 3000+ employees</h3>
 
         <div className="flex justify-center mb-6">
           <MainCTA href="https://tide-ai-mock.vercel.app/">Sandbox</MainCTA>

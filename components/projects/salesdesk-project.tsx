@@ -20,7 +20,7 @@ export default function SalesDeskProject() {
           <span className="text-[20px] text-main-text/80">2023</span>
         </div>
 
-        <h3 className="text-[20px] md:text-5xl font-semibold mb-10 leading-[1.15] pr-6 md:pr-0 font-aeonik-extended">
+        <h3 className="text-[20px] md:text-5xl font-medium mb-10 leading-[1.3] pr-6 md:pr-0 font-aeonik-extended">
           Foundational research and UX strategy for AI CRM
         </h3>
 

@@ -23,7 +23,7 @@ export default function ClarifyTools() {
           <span className="text-[20px] text-main-text/80">2025</span>
         </div>
 
-        <h3 className="text-[20px] md:text-5xl font-semibold mb-10 leading-[1.15] font-aeonik-extended">
+        <h3 className="text-[20px] md:text-5xl font-medium mb-10 leading-[1.3] font-aeonik-extended">
           Engineering-as-marketing: showcasing the benefits of an AI-powered CRM that saves time in building relationships
         </h3>
 

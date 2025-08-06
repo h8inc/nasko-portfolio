@@ -24,7 +24,7 @@ export default function BalanceGuru() {
           <span className="text-[20px] text-main-text/80">2023-2024</span>
         </div>
 
-        <h3 className="text-[20px] md:text-5xl font-semibold mb-10 leading-[1.15] font-aeonik-extended">
+        <h3 className="text-[20px] md:text-5xl font-medium mb-10 leading-[1.3] font-aeonik-extended">
           The power of smart software and expert accountants, all in one place.
         </h3>
 
