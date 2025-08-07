@@ -82,7 +82,7 @@ export default function TideProject() {
           ))}
         </motion.div>
         <div className="flex justify-center mt-10 pr-6 md:pr-0">
-          <MainCTA href="https://app.pitch.com/app/player/bbdfda9b-8742-42ce-953e-6ff650d8bfa1/aa660b39-43fb-4b3b-bcb7-61e1d8f63829">
+          <MainCTA href="https://pitch.com/v/tide-nk2isp">
             View case study
           </MainCTA>
         </div>
