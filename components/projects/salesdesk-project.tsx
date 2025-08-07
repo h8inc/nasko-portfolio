@@ -21,7 +21,7 @@ export default function SalesDeskProject() {
         </div>
 
         <h3 className="text-[20px] md:text-5xl font-medium mb-10 leading-[1.3] pr-6 md:pr-0 font-aeonik-extended">
-          Foundational research and UX strategy for AI CRM
+          Foundational research and UX strategy for an AI CRM tool
         </h3>
 
         <div className="flex justify-center mt-10 pr-6 md:pr-0">

@@ -37,10 +37,10 @@ export default function HotjarProject() {
         </div>
         
         <div className="flex flex-col items-center gap-4 mt-10">
-          <MainCTA href="https://app.pitch.com/app/player/bbdfda9b-8742-42ce-953e-6ff650d8bfa1/2da6d163-8aba-4185-9f68-9eb4006dc108" className="w-fit">
+          <MainCTA href="https://pitch.com/v/hotjar-case-study-adw94r" className="w-fit">
             Onboarding case study
           </MainCTA>
-          <TertiaryCTA href="https://app.pitch.com/app/player/bbdfda9b-8742-42ce-953e-6ff650d8bfa1/82a0e37b-deca-4c52-b765-eec54e6e4bf7" 
+          <TertiaryCTA href="https://pitch.com/v/hotjar---pricing-case-pd244x" 
                        target="_blank" 
                        rel="noopener noreferrer">
             Pricing case study
