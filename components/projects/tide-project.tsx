@@ -3,6 +3,7 @@
 import Image from "next/image"
 import MobileImageGallery from "../mobile-image-gallery"
 import MainCTA from "../main-cta"
+import TertiaryCTA from "../tertiary-cta"
 import AnimatedSection from "../animated-section"
 import { motion } from "framer-motion"
 import { fadeIn } from "@/lib/motion"
@@ -81,10 +82,15 @@ export default function TideProject() {
             </div>
           ))}
         </motion.div>
-        <div className="flex justify-center mt-10 pr-6 md:pr-0">
+        <div className="flex flex-col items-center gap-4 mt-10 pr-6 md:pr-0">
           <MainCTA href="https://pitch.com/v/tide-nk2isp">
             View case study
           </MainCTA>
+          <TertiaryCTA href="https://tide-mocks.netlify.app/cash-flow" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+            Play with interactive prototypes
+          </TertiaryCTA>
         </div>
       </div>
 
