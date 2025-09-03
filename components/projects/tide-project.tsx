@@ -83,7 +83,7 @@ export default function TideProject() {
           ))}
         </motion.div>
         <div className="flex flex-col items-center gap-4 mt-10 pr-6 md:pr-0">
-          <MainCTA href="https://pitch.com/v/tide-nk2isp">
+          <MainCTA href="https://www.figma.com/deck/yryrn4jmKZIQ1zRUqXQ8Wm/Tide-IA-case-study?node-id=1-42&viewport=-2768%2C-59%2C0.61&t=IzFIPtzoJScxMLwy-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">
             View case study
           </MainCTA>
           <TertiaryCTA href="https://tide-mocks.netlify.app/cash-flow" 
