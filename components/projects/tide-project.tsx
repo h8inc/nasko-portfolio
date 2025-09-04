@@ -57,7 +57,7 @@ export default function TideProject() {
           className="text-[20px] md:text-5xl font-medium text-main-text mb-10 leading-[1.3] pr-6 md:pr-0 font-aeonik-extended"
           variants={fadeIn("up", 0.2)}
         >
-          Fintech product <span className="block md:inline">from 0 to 20+ million in net revenue</span>
+          Fintech product <span className="block md:inline">from 0 to 20+ million in ARR</span>
         </motion.h3>
 
         <div className="md:hidden p-0 m-0">
@@ -100,8 +100,8 @@ export default function TideProject() {
           <p className="text-base text-main-text/90 leading-relaxed font-aeonik-regular mb-4">
             As Staff Designer, I lead the design strategy for a comprehensive subscription service that integrates
             payroll, tax, reporting, invoicing, and accounting functionalities. My focus is on creating an easy-to-use
-            and secure solution for small businesses. We've successfully scaled from 0 to over 20,000 subscribers and $8
-            million in net revenue.
+            and secure solution for small businesses. We've successfully scaled from 0 to over 10,000 subscribers and $20+
+            million in annual recurring revenue.
           </p>
           <p className="text-base text-main-text/90 leading-relaxed font-aeonik-regular mb-4">
             In my day-to-day I use data-driven insights, AI and write code to prototype design artefacts, facilitating
