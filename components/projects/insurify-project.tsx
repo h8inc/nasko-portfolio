@@ -74,9 +74,7 @@ export default function InsurifyProject() {
         <div>
           <div className="project-label-heading">Summary:</div>
           <p className="text-base font-aeonik-regular">
-            New website, product interface revamp, and the first design system. Hired two designers, led a dozen of A/B
-            tests and releases. We achieved a 32% increase in conversions and a 20% month-over-month sales increase,
-            totalling an additional $1.2 million of revenue each month.
+          Users didn't trust the clunky interface for high-stakes insurance decisions. I led a full redesign creating a modern, trustworthy flow - new website, product revamp, and first design system. Result: 32% conversion increase, 20% MoM sales growth, $1.2M additional monthly revenue.
           </p>
         </div>
         <div>

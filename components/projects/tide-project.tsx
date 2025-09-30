@@ -98,22 +98,12 @@ export default function TideProject() {
         <div className="md:col-span-3 lg:col-span-4">
           <div className="project-label-heading">Summary:</div>
           <p className="text-base text-main-text/90 leading-relaxed font-aeonik-regular mb-4">
-            As Staff Designer, I lead the design strategy for a comprehensive subscription service that integrates
-            payroll, tax, reporting, invoicing, and accounting functionalities. My focus is on creating an easy-to-use
-            and secure solution for small businesses. We've successfully scaled from 0 to over 10,000 subscribers and $20+
-            million in annual recurring revenue.
+          Small business owners are blindsided by tax bills and can't answer "Am I profitable?" or "Can I pay my bills?" I built 0-to-1 tax management and financial analytics tools that solve these painful questions. As Staff Designer leading strategy across payroll, tax, reporting, and accounting, we scaled from 0 to 10,000+ subscribers and $20+ million ARR.
           </p>
           <p className="text-base text-main-text/90 leading-relaxed font-aeonik-regular mb-4">
-            In my day-to-day I use data-driven insights, AI and write code to prototype design artefacts, facilitating
-            discussions and informing roadmaps.
+          In my day-to-day I use data-driven insights, AI and write code to prototype design artefacts, facilitating discussions and informing roadmaps. I've overseen two major IA redesigns, improved onboarding, and introduced a freemium model that boosted net revenue.
           </p>
-          <p className="text-base text-main-text/90 leading-relaxed font-aeonik-regular">
-            I've overseen two major information architecture redesigns, improved onboarding processes, and introduced a
-            freemium model that significantly boosted net revenue. Working closely with the VP, Head of Product, and
-            engineering leads we ensure strategic alignment and effectively fulfilling user needs. I'm also actively
-            integrating our services with Tide's broader financial tools for micro SMEs, taking a hands-on approach to
-            drive project success.
-          </p>
+         
         </div>
         <div className="md:col-span-2 lg:col-span-2">
           <div className="project-label-heading">Role:</div>

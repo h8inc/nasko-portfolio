@@ -52,8 +52,7 @@ export default function HotjarProject() {
         <div>
           <div className="project-label-heading">Summary:</div>
           <p className="text-base font-aeonik-regular">
-            Enhanced the initial interactions for thousands of new Hotjar customers. Worked on pricing, sign-up, and
-            onboarding experience, resulting in a threefold increase in activation from our target customers.
+          New users weren't converting because they couldn't quickly reach their first valuable insight. I redesigned sign-up and onboarding to get users to actionable data faster, resulting in a threefold increase in activation from our target customers.
           </p>
         </div>
         <div>
