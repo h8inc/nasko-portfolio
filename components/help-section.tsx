@@ -55,7 +55,15 @@ export default function HelpSection() {
       </motion.h2>
       <div className="help-container">
         {helpItems.map((item) => (
-          <motion.div className="help-child liquid-glass-card" key={item.title} variants={fadeIn("up", item.delay)}>
+          <motion.a 
+            href={item.href}
+            className="help-child liquid-glass-card transition-[border-color] duration-300 ease-out hover:border-primary/25 group block" 
+            key={item.title} 
+            variants={fadeIn("up", item.delay)}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.98 }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+          >
             <div className="text-base font-normal text-main-text mb-2 font-aeonik-mono">{item.title}</div>
             <div className="text-[28px] leading-[1.25] font-bold text-main-text mb-4 h-[108px] font-aeonik-extended">
               {item.description}
@@ -63,7 +71,7 @@ export default function HelpSection() {
             <div className="mt-auto">
               <TertiaryCTA href={item.href}>Learn more</TertiaryCTA>
             </div>
-          </motion.div>
+          </motion.a>
         ))}
       </div>
 
