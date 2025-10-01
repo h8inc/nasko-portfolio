@@ -72,9 +72,7 @@ export default function HelpSection() {
         className="mt-16 flex flex-col items-center"
         variants={fadeIn("up", 0.5)}
       >
-        <h3 className="text-[20px] font-normal text-muted-text mb-6 font-aeonik-regular">
-          Connect with me
-        </h3>
+  
         <div className="flex gap-4 md:gap-6">
           {socialLinks.map((social) => (
             <motion.a
