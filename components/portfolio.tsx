@@ -1,6 +1,7 @@
 import TideProject from "./projects/tide"
 import HotjarProject from "./projects/hotjar"
 import InsurifyProject from "./projects/insurify"
+import CaliperProject from "./projects/caliper-project"
 
 export default function Portfolio() {
   return (
@@ -9,6 +10,7 @@ export default function Portfolio() {
       <TideProject />
       <HotjarProject />
       <InsurifyProject />
+      <CaliperProject />
     </div>
   )
 }
