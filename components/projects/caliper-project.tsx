@@ -26,12 +26,13 @@ export default function CaliperProject() {
 
         <div className="flex items-center justify-center">
           <Image
-            src="/images/calliper 2.0.png"
-            alt="Caliper product analytics platform"
+            src="/images/Portfolio 2024.gif"
+            alt="Portfolio 2024 animation"
             width={1000}
             height={800}
             className="w-full h-auto object-contain rounded-lg"
             priority
+            unoptimized
           />
         </div>
         

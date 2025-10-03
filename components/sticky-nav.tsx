@@ -58,7 +58,7 @@ export default function StickyNav() {
     }
   }, [isMenuOpen])
 
-  const handleNavClick = (sectionId) => {
+  const handleNavClick = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" })
     setActiveSection(sectionId)
     setIsMenuOpen(false)

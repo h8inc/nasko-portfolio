@@ -1,6 +1,6 @@
-import TideProject from "./projects/tide"
-import HotjarProject from "./projects/hotjar"
-import InsurifyProject from "./projects/insurify"
+import TideProject from "./projects/tide-project"
+import HotjarProject from "./projects/hotjar-project"
+import InsurifyProject from "./projects/insurify-project"
 import CaliperProject from "./projects/caliper-project"
 
 export default function Portfolio() {
