@@ -57,7 +57,7 @@ export default function TideProject() {
           className="text-[20px] md:text-5xl font-medium text-main-text mb-10 leading-[1.3] pr-6 md:pr-0 font-aeonik-extended"
           variants={fadeIn("up", 0.2)}
         >
-          Fintech product <span className="block md:inline">from 0 to 20+ million in ARR</span>
+          SaaS in fintech <span className="block md:inline">from 0 to 8+ million in ARR</span>
         </motion.h3>
 
         <div className="md:hidden p-0 m-0">
@@ -98,11 +98,12 @@ export default function TideProject() {
         <div className="md:col-span-3 lg:col-span-4">
           <div className="project-label-heading">Summary:</div>
           <p className="text-base text-main-text/90 leading-relaxed font-aeonik-regular mb-4">
-          Small business owners are blindsided by tax bills and can't answer "Am I profitable?" or "Can I pay my bills?" I built 0-to-1 tax management and financial analytics tools that solve these painful questions. As Staff Designer leading strategy across payroll, tax, reporting, and accounting, we scaled from 0 to 10,000+ subscribers and $20+ million ARR.
+          Small business owners are blindsided by tax bills and can't answer "Am I profitable?" or "Can I pay my bills?" I built 0-to-1 tax management and financial analytics tools that solve these painful questions. As Staff Designer leading strategy across payroll, tax, reporting, and accounting, we scaled from 0 to 10,000+ subscribers and $8+ million ARR. Also built AI assistant used by 3K+ Tide employees for internal knowledge search.
           </p>
           <p className="text-base text-main-text/90 leading-relaxed font-aeonik-regular mb-4">
           In my day-to-day I use data-driven insights, AI and write code to prototype design artefacts, facilitating discussions and informing roadmaps. I've overseen two major IA redesigns, improved onboarding, and introduced a freemium model that boosted net revenue.
           </p>
+          
          
         </div>
         <div className="md:col-span-2 lg:col-span-2">

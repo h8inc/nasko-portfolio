@@ -14,9 +14,9 @@ export default function HelpSection() {
       delay: 0.2,
     },
     {
-      title: "1 and beyond",
-      description: "Hands-on design and mentorship in hyper-growth",
-      href: "#insurify",
+      title: "AI-Fueled Design",
+      description: "Rapid Prototyping and Product Creation",
+      href: "#side-gigs",
       delay: 0.3,
     },
     {
