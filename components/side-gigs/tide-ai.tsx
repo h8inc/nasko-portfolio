@@ -34,9 +34,9 @@ export default function TideAi() {
         <div className="md:col-span-2">
           <div className="project-label-heading">Summary:</div>
           <p className="text-base font-aeonik-regular">
-            Developed an AI-assistant for Tide employees from various departments and use cases. A powerful knowledge
-            bot that increases velocity, decreases silos, and enables cross-team collaboration.
-          </p>
+          Developed an AI-assistant for Tide employees from various departments and use cases. A powerful knowledge bot that increases velocity, decreases silos, and enables cross-team collaboration.
+          Impact: 3K+ users, 50K+ queries/month, 40% reduction in cross-team questions. Built with OpenAI API + RAG on 10K+ internal docs
+ in confluence and now exploring adding additional sources of information.</p>
         </div>
         <div>
           <div className="project-label-heading">Tech Stack:</div>

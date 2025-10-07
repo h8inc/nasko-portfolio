@@ -94,19 +94,35 @@ export default function TideProject() {
         </div>
       </div>
 
-      <motion.div className="grid md:grid-cols-5 lg:grid-cols-6 gap-10 mb-28" variants={fadeIn("up", 0.4)}>
-        <div className="md:col-span-3 lg:col-span-4">
+      <motion.div className="grid md:grid-cols-3 gap-10 mb-28" variants={fadeIn("up", 0.4)}>
+        <div className="md:col-span-2">
           <div className="project-label-heading">Summary:</div>
           <p className="text-base text-main-text/90 leading-relaxed font-aeonik-regular mb-4">
-          Small business owners are blindsided by tax bills and can't answer "Am I profitable?" or "Can I pay my bills?" I built 0-to-1 tax management and financial analytics tools that solve these painful questions. As Staff Designer leading strategy across payroll, tax, reporting, and accounting, we scaled from 0 to 10,000+ subscribers and $8+ million ARR. Also built AI assistant used by 3K+ Tide employees for internal knowledge search.
-          </p>
-          <p className="text-base text-main-text/90 leading-relaxed font-aeonik-regular mb-4">
-          In my day-to-day I use data-driven insights, AI and write code to prototype design artefacts, facilitating discussions and informing roadmaps. I've overseen two major IA redesigns, improved onboarding, and introduced a freemium model that boosted net revenue.
+            Small business owners are blindsided by tax bills and can't answer "Am I profitable?" or "Can I pay my bills?"
           </p>
           
-         
+          <p className="text-base text-main-text/90 leading-relaxed font-aeonik-regular mb-4">
+            As Staff Designer leading strategy across payroll, tax, reporting, and accounting, I built 0-to-1 tax management and financial analytics tools that solve these painful questions.
+          </p>
+
+          <p className="text-base text-main-text/90 leading-relaxed font-aeonik-regular mb-6">
+            Introduced freemium as an entirely new activation method for Tide. Created surfaces across the ecosystem of products to drive traffic with hooks related to people's jobs to be done — getting users to try different products by delivering value upfront instead of paywalling features. This activation strategy was first iteratively tested and released across products and the ecosystem.
+          </p>
+          
+          <p className="text-base text-main-text/90 leading-relaxed font-aeonik-regular mb-4">
+            <strong>In my day-to-day:</strong> I prototype in code, use AI throughout my process, and let 
+            data drive decisions — not opinions.
+          </p>
         </div>
-        <div className="md:col-span-2 lg:col-span-2">
+        <div>
+          <div className="project-label-heading">Key Achievements:</div>
+          <ul className="text-base text-main-text/90 font-aeonik-regular space-y-2 mb-6">
+            <li>• 0 → 10,000+ subscribers, 0 → $8M+ ARR</li>
+            <li>• 22% activation rate (vs. 0.9% baseline) - a 24x improvement</li>
+            <li>• Built AI assistant for 3K+ employees</li>
+          </ul>
+        
+          
           <div className="project-label-heading">Role:</div>
           <div className="text-base text-main-text/90 font-aeonik-regular">
             <p>Fractional product manager/ staff designer</p>

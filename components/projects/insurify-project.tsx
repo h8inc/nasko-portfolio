@@ -71,11 +71,21 @@ export default function InsurifyProject() {
       </div>
 
       <div className="grid md:grid-cols-4 gap-10 mb-28 text-main-text/90">
-        <div>
+        <div className="md:col-span-2">
           <div className="project-label-heading">Summary:</div>
-          <p className="text-base font-aeonik-regular">
-          Users didn't trust the clunky interface for high-stakes insurance decisions. I led a full redesign creating a modern, trustworthy flow - new website, product revamp, and first design system. Result: 32% conversion increase, 20% MoM sales growth, $1.2M additional monthly revenue.
+          <p className="text-base font-aeonik-regular mb-4">
+            Users didn't trust the clunky interface for high-stakes insurance decisions. I led a comprehensive redesign as Lead Product Designer driving growth strategy.
           </p>
+          
+          <p className="text-base font-aeonik-regular mb-4">
+            <strong>Approach:</strong> Transformed a 30-field form into a conversational flow that guides users through complex decisions with confidence and clarity.
+          </p>
+          
+          <p className="text-base font-aeonik-regular mb-4">
+            Hired and led 2 designers across 3 engineering teams, establishing the company's first design system to enable rapid iteration. Built the first end-to-end product development process—from requirements definition through design execution to engineering handoff.
+          </p>
+          
+      
         </div>
         <div>
           <div className="project-label-heading">Role:</div>
@@ -83,20 +93,8 @@ export default function InsurifyProject() {
             <p>Lead product designer</p>
             <p>Growth product manager</p>
           </div>
-        </div>
-        <div>
-          <div className="project-label-heading">Skills:</div>
-          <div className="text-base font-aeonik-regular">
-            <p>Project management</p>
-            <p>Stakeholder mngmt</p>
-            <p>User testing/research</p>
-            <p>Data analytics</p>
-            <p>Visual Design</p>
-            <p>Design Systems</p>
-          </div>
-        </div>
-        <div>
-          <div className="project-label-heading">Team:</div>
+          
+          <div className="project-label-heading mt-6">Team:</div>
           <div className="text-base font-aeonik-regular">
             <p>Myself</p>
             <p>2 designers</p>
@@ -105,6 +103,17 @@ export default function InsurifyProject() {
             <p>3 engineering teams</p>
             <p>1 analyst</p>
           </div>
+        </div>
+        <div>
+          <div className="project-label-heading">Key Achievements:</div>
+          <ul className="text-base text-main-text/90 font-aeonik-regular space-y-2">
+            <li>• 32% increase in flow completions</li>
+            <li>• $1.2M additional monthly revenue</li>
+            <li>• 20% MoM sales growth </li>
+            <li>• Built first design system</li>
+            <li>• Hired and led 2 designers</li>
+            <li>• Established end-to-end product development process</li>
+          </ul>
         </div>
       </div>
     </section>

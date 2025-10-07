@@ -49,11 +49,17 @@ export default function HotjarProject() {
       </div>
 
       <div className="grid md:grid-cols-4 gap-10 mb-28 text-main-text/90">
-        <div>
+        <div className="md:col-span-2">
           <div className="project-label-heading">Summary:</div>
-          <p className="text-base font-aeonik-regular">
-          New users weren't converting because they couldn't quickly reach their first valuable insight. I redesigned sign-up and onboarding to get users to actionable data faster, resulting in a threefold increase in activation from our target customers.
+          <p className="text-base font-aeonik-regular mb-4">
+            New users couldn't reach insights fast enough — 5% activation despite 15k monthly signups.
           </p>
+          
+          <p className="text-base font-aeonik-regular mb-4">
+            <strong>Approach:</strong> Ran experiments with the pricing page (which accounted for 20% of signups). Separately, tested and removed friction points in the sign-up and onboarding process that weren't relevant to all user personas, then designed a personalized onboarding flow for our target customers—product teams in small and medium tech companies.
+          </p>
+          
+          
         </div>
         <div>
           <div className="project-label-heading">Role:</div>
@@ -61,25 +67,22 @@ export default function HotjarProject() {
             <p>Senior Product Designer</p>
             <p>Product Manager</p>
           </div>
-        </div>
-        <div>
-          <div className="project-label-heading">Skills:</div>
-          <div className="text-base font-aeonik-regular">
-            <p>Product strategy</p>
-            <p>User experience</p>
-            <p>User testing/research</p>
-            <p>Data analytics</p>
-            <p>Story mapping</p>
-          </div>
-        </div>
-        <div>
-          <div className="project-label-heading">Team:</div>
+          
+          <div className="project-label-heading mt-6">Team:</div>
           <div className="text-base font-aeonik-regular">
             <p>1 designer</p>
             <p>8 full-stack engineers</p>
             <p>2 product managers</p>
             <p>Myself</p>
           </div>
+        </div>
+        <div>
+          <div className="project-label-heading">Key Achievements:</div>
+          <ul className="text-base text-main-text/90 font-aeonik-regular space-y-2">
+            <li>• 10% overall improvement in activation across all segments</li>
+            <li>• 30x improvement in sales pipeline (0.5% to 15% demos booked)</li>
+            <li>• Redesigned onboarding for 15k monthly signups</li>
+          </ul>
         </div>
       </div>
     </section>
