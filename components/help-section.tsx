@@ -15,7 +15,7 @@ export default function HelpSection() {
     },
     {
       title: "AI-Fueled Design",
-      description: "Rapid Prototyping and Product Creation",
+      description: "Rapid Prototyping and product creation",
       href: "#side-gigs",
       delay: 0.3,
     },
