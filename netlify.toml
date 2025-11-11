@@ -1,0 +1,12 @@
+[build]
+  # Build the one-pager portfolio as the main site
+  base = "one-pager-portfolio"
+  publish = "one-pager-portfolio/dist"
+  command = "cd one-pager-portfolio && npm install && npm run build"
+
+# SPA redirect - serve index.html for all routes
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
